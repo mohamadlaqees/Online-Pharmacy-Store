@@ -1,0 +1,26 @@
+{
+"description":["Chlorotrianisene may increase the thrombogenic activities of Cetuximab."],
+  "drugs": [
+    { "name": "Metoprolol Tartrate" },
+    { "name": "Lisinopril" },
+    { "name": "Cladosporium Sphaerospermum Hormodendrum Hordei" },
+    { "name": "Clindamycin hydrochloride" },
+    { "name": "Menthol 6%" },
+    { "name": "Menthol" },
+    { "name": "Epicoccum nigrum" },
+    { "name": "Lidocaine" },
+    {
+      "name": "Haemophilus b Conjugate Vaccine (Tetanus Toxoid Conjugate)"
+    },
+    { "name": "lomustine" },
+    { "name": "Titanium Dioxide" },
+    {
+      "name": "Avobenzone, Homosalate, Octisalate, Octocrylene, and Oxybenzone"
+    },
+    { "name": "Hydrocortisone" },
+    { "name": "Polymyxin B Sulfate and Bacitracin Zinc" },
+    {
+      "name": "Naja Naja Whole, Scrophularia nodosa, Lactic Acid, DL-, and Radium bromide"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html body {
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+#btnGroupAddon {
+  background-color: #1390e3;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.link {
+  @apply pt-4 pb-3  relative cursor-pointer rounded-md;
+  height: 76px;
+}
+.link .route i {
+  @apply mr-5;
+}
+.route {
+  @apply no-underline  ml-4 text-gray-500;
+  transition: 0.3s;
+}
+.route.active {
+  color: #1390e3;
+}
+
+.route:hover {
+  color: #1390e3;
+}
+.link .route.active {
+  color: #1390e3;
+}
+.link:hover .link .route,
+.link .route:hover {
+  color: #1390e3;
+}
+.page {
+  @apply bg-slate-50  rounded-md p-4;
+  height: calc(100vh - 48px);
+  margin-top: 48px;
+  overflow: scroll;
+}
+.page2 {
+  @apply bg-slate-50  rounded-md p-4;
+  height: 108vh;
+  margin-top: 48px;
+  overflow: auto;
+}
+@media (min-width: 500px) {
+  .page2 {
+    height: calc(100vh - 50px);
+  }
+}
+.menu {
+  width: 500px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media (max-width: 640px) {
+  .menu {
+    width: 350px;
+  }
+}
+.menu:hover {
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  color: #52b0ed;
+}
+
+.drop {
+  width: 500px;
+  position: relative;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.2s;
+  opacity: 0;
+  visibility: hidden;
+  top: -45px;
+  height: 0;
+}
+@media (max-width: 640px) {
+  .drop {
+    width: 350px;
+  }
+}
+@media (max-width: 640px) {
+  .drop.drop.active {
+    width: 350px;
+    margin-bottom: 3px;
+  }
+}
+.drop.active {
+  position: relative;
+  transition: 0.3s;
+  width: 500px;
+  padding: 10px;
+  border-radius: 6px;
+  top: 0;
+  height: fit-content;
+  visibility: visible;
+  opacity: 100%;
+  overflow: scroll;
+}
+.email {
+  @apply w-96 h-96 m-auto relative translate-y-1/2  text-start shadow-xl p-5 rounded-md bg-secondry xl:-translate-x-10% xl:bottom-48;
+  position: relative;
+}
+.email::before {
+  @apply w-full h-10 flex justify-center items-center text-xl tracking-wider	  bg-email font-bold text-white rounded-t-md;
+  content: "email verification";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.Fpass {
+  @apply w-96 h-96 m-auto relative translate-y-1/2  text-start shadow-xl p-5 rounded-md bg-secondry xl:-translate-x-10% xl:bottom-48;
+  position: relative;
+}
+.Fpass::before {
+  @apply w-full h-10 flex justify-center items-center text-xl tracking-wider	  bg-email font-bold text-white rounded-t-md;
+  content: "Reset password";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Rpass {
+  @apply w-96 h-96 m-auto relative translate-y-1/2  text-start shadow-xl p-5 rounded-md bg-secondry xl:-translate-x-10% xl:bottom-48;
+  position: relative;
+}
+.Rpass::before {
+  @apply w-full h-10 flex justify-center items-center text-xl tracking-wider	  bg-email font-bold text-white rounded-t-md;
+  content: "New password";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
