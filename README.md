@@ -1,92 +1,54 @@
-<<<<<<< HEAD
+# Pharmacy Management System (PMS) Store
 
+Single-page React application that provides a front-end for an online pharmacy/store. Features user authentication, product catalog, cart & wishlist, prescription upload, orders, interactions/allergies checks and a simple career application flow. Uses React Router for routing and Redux for client-side state.
 
-the packages you have to download :
-1- ant librarie
----> cd pms npm install antd
+## Key features
+- User authentication: register, login, email flow, forgot-password + tokenized reset
+- Profile: view and edit user profile
+- Catalog: product listing and detail pages (dynamic route `/product/:id`)
+- Shopping: cart, checkout-ready UI, orders history, wishlist
+- Medical: upload prescriptions, manage allergies, check drug interactions
+- Careers: apply for jobs via ApplyJob page
+- Layout: dashboard wrapper layout component for authenticated sections
+- State: Redux store for app state management
 
-2-tailwind css
-check the website
-https://tailwindcss.com/docs/installation
+## Routes (defined in src/App.js)
+- / — Home (PhContent) inside dashboard layout (PhStore)
+- /cart
+- /profile
+- /editprofile
+- /upload-prescription
+- /my-orders
+- /interaction
+- /product/:id
+- /allergies
+- /wishList
+- /applyJob
+- /ph-login
+- /ph-register
+- /ph-sentEmail
+- /ph-forgot-password
+- /password-reset/:token
 
-3-formik and Yup
----> cd pms  npm i formik yup
+## Quick start
+1. Clone repo
+2. Install deps
+   npm install
+3. Start dev server
+   npm start
+4. Build for production
+   npm run build
 
-4-react-bootstrap
----> cd pms  npm install react-bootstrap 
+## Important files
+- src/App.js — routing
+- src/index.js — app bootstrap (BrowserRouter + Redux Provider)
+- src/layout/Dashboard.js — dashboard / layout
+- src/Components/authLogin.js — auth wrapper used for login route
+- src/pages/* — page components (Ph-login, Ph-register, Cart, Product, Profile, etc.)
+- src/states/index.js — Redux store
 
+## Notes & troubleshooting
+- Reset password file import in App.js points to `./pages/ResetPassworf` — verify and either rename file to `ResetPassworf.js` or correct the import to `ResetPassword.js`.
+- CSS: index imports `./index.css`, `./all.min.css`, and Bootstrap from node_modules.
+- If you use a backend, set environment variables (example): REACT_APP_API_BASE_URL and update API client code.
 
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# Online-Pharmacy-Store
->>>>>>> a5863a45a4dbd3ea64eaafdae8c1636f3567676f
