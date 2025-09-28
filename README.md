@@ -1,4 +1,4 @@
-# Pharmacy Management System (PMS) Store
+# Online-Pharmacy-Store
 
 Single-page React application that provides a front-end for an online pharmacy/store. Features user authentication, product catalog, cart & wishlist, prescription upload, orders, interactions/allergies checks and a simple career application flow. Uses React Router for routing and Redux for client-side state.
 
