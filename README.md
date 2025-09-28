@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 the packages you have to download :
@@ -86,3 +87,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# Online-Pharmacy-Store
+>>>>>>> a5863a45a4dbd3ea64eaafdae8c1636f3567676f
