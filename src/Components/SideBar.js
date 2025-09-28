@@ -1,7 +1,7 @@
 import React, { Fragment, useContext } from "react";
 import { useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
-import { checkContext } from "../layout/Ph-store";
+import { checkContext } from "../layout/Dashboard";
 import { resetA } from "../states/authSalice";
 import { logout, resetL } from "../states/loginSlice";
 
@@ -16,7 +16,7 @@ function SideBar() {
     dispatch(resetA());
     dispatch(resetL());
   };
-  
+
   return (
     <Fragment>
       <div

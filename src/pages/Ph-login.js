@@ -7,13 +7,14 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../states/loginSlice";
-import { getCSRF, getUserData } from "../states/authSalice";
+import { getCSRF, getUserData, resetA } from "../states/authSalice";
 export default function PhLogin() {
   const { errorL, successL } = useSelector((state) => state.loginSlice);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   React.useEffect(() => {
+    dispatch(resetA());
     if (successL !== null) {
       msg("success", successL);
       dispatch(getUserData());

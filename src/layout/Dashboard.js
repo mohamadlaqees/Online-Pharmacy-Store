@@ -8,6 +8,7 @@ import { reset } from "../states/productSlice";
 export const checkContext = React.createContext();
 const CheckProvider = checkContext.Provider;
 
+
 function Dashboard() {
   const dispatch = useDispatch();
   const { userId } = useSelector((state) => state.authSlice);
@@ -43,4 +44,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default Dashboard

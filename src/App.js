@@ -1,4 +1,4 @@
-import PhStore from "./layout/Ph-store";
+import PhStore from "./layout/Dashboard";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import PhLogin from "./pages/Ph-login";

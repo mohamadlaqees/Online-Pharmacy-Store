@@ -219,7 +219,11 @@ function Header({ set, check }) {
   const onChangeAv = () => {
     setCheckAv(!checkAv);
     setCheckNAv(false);
-    dispatch(setAvailability(1));
+    if (checkAv === false) {
+      dispatch(setAvailability(1));
+    } else if (checkAv === true) {
+      dispatch(setAvailability(0));
+    }
   };
 
   const onChangeNAv = () => {
@@ -273,7 +277,7 @@ function Header({ set, check }) {
       setCheckR(false);
     }
   };
-  
+
   return (
     <div className=" p-1 flex justify-center md:justify-between   bg-white rounded-md shadow-sm ">
       <div className="hidden show:block">
